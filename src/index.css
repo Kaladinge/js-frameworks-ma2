@@ -3,17 +3,59 @@
   width: 75%;
 }
 
+.boy-container {
+  animation: boy-disappear 4.4s;
+  animation-fill-mode: forwards;
+}
+
 .boy {
   width: 60%;
+}
+
+.boy3 {
+  width: 93%;
+  animation: boy-appear 4.4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes boy-appear {
+  0% {
+    opacity: 0;
+  }
+
+  95% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes boy-disappear {
+  0% {
+    opacity: 1;
+  }
+
+  95% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.boy3 {
+  top: 0;
+  transform: translate(-47%);
 }
 
 .eyes {
   top: 32%;
   left: 38%;
   width: 25%;
-  animation: look-around 4s infinite;
-
-  
+  animation: look-around 4s;
 }
 
 @keyframes look-around {
@@ -42,4 +84,42 @@
   top: 50%;
   left: 40%;
   width: 18%;
+  animation: mouth-disappear 4s;
+  animation-fill-mode: forwards;
 }
+
+@keyframes mouth-disappear {
+  0% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.mouth2 {
+  top: 50%;
+  left: 43%;
+  width: 10%;
+  animation: mouth2-appear 4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes mouth2-appear {
+  0% {
+    opacity: 0;
+  }
+
+  95% {
+    opacity: 0;
+  }
+
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
