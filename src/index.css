@@ -1,6 +1,7 @@
 .image-container {
   text-align: center;
   width: 75%;
+  margin-top: 30%;
 }
 
 .boy-container {
@@ -132,6 +133,41 @@
 
 .zombie {
   width: 80%;
+  animation: zombie-wiggle 2s linear infinite;
+  animation-delay: 8s;
+}
+
+@keyframes zombie-wiggle {
+
+  0%,
+  7% {
+    transform: rotateZ(0);
+  }
+
+  15% {
+    transform: rotateZ(-15deg);
+  }
+
+  20% {
+    transform: rotateZ(10deg);
+  }
+
+  25% {
+    transform: rotateZ(-10deg);
+  }
+
+  30% {
+    transform: rotateZ(6deg);
+  }
+
+  35% {
+    transform: rotateZ(-4deg);
+  }
+
+  40%,
+  100% {
+    transform: rotateZ(0);
+  }
 }
 
 .zombie-container {
@@ -150,11 +186,11 @@
     left: 100%;
   }
   90% {
-    left: 10%;
+    left: 5%;
   }
   100% {
     opacity: 1;
-    left: 10%;
+    left: 5%;
   }
 }
 
