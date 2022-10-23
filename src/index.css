@@ -4,7 +4,7 @@
 }
 
 .boy-container {
-  animation: boy-disappear 4.4s;
+  animation: boy-disappear 5s;
   animation-fill-mode: forwards;
 }
 
@@ -14,21 +14,25 @@
 
 .boy3 {
   width: 93%;
-  animation: boy-appear 4.4s;
+  animation: boy-appear 8s;
   animation-fill-mode: forwards;
+  left: 50%;
 }
 
 @keyframes boy-appear {
   0% {
     opacity: 0;
   }
-
-  95% {
+  60% {
     opacity: 0;
   }
-
+  65% {
+    opacity: 1;
+    left: 50%;
+  }
   100% {
     opacity: 1;
+    left: -70%;
   }
 }
 
@@ -37,7 +41,7 @@
     opacity: 1;
   }
 
-  95% {
+  98% {
     opacity: 1;
   }
 
