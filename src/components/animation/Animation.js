@@ -16,6 +16,9 @@ function Animation() {
         />
       </div>
       <img className="border boy3 position-absolute" src="/assets/boy3.png" />
+      <div className="zombie-container border position-absolute">
+        <img className="border zombie" src="/assets/zombie.png" />
+      </div>
     </div>
   );
 }

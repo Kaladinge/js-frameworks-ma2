@@ -30,6 +30,9 @@
     opacity: 1;
     left: 50%;
   }
+  75% {
+    left: -40%;
+  }
   100% {
     opacity: 1;
     left: -70%;
@@ -124,6 +127,34 @@
   100% {
     visibility: visible;
     opacity: 1;
+  }
+}
+
+.zombie {
+  width: 80%;
+}
+
+.zombie-container {
+  top: 0%;
+  left: 130%;
+  width: 100%;
+  animation: zombie-appear 8s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes zombie-appear {
+  0% {
+    left: 130%;
+  }
+  60% {
+    left: 100%;
+  }
+  90% {
+    left: 10%;
+  }
+  100% {
+    opacity: 1;
+    left: 10%;
   }
 }
 
