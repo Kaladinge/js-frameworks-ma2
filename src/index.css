@@ -1,3 +1,7 @@
+body {
+  background-color: #252759;
+}
+
 .image-container {
   text-align: center;
   width: 75%;
@@ -191,6 +195,29 @@
   100% {
     opacity: 1;
     left: 5%;
+  }
+}
+
+.grass {
+  width: 100%;
+  margin-top: -19%;
+}
+
+.logo {
+  width: 95%;
+  transform: translate(-103%);
+  animation: logo-up 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 8s;
+  top: 110%;
+}
+
+@keyframes logo-up {
+  0% {
+    top: 110%;
+  }
+  100% {
+    top: 20%;
   }
 }
 
